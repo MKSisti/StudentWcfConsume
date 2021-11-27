@@ -1,0 +1,64 @@
+﻿@model StudentWcfConsume.ServiceReference1.Student
+
+@{
+    ViewBag.Title = "GetStudent";
+}
+
+<h2>GetStudent</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+        <h5>
+            @Html.DisplayNameFor(model => model.cin)
+        </h5>
+
+        <p>
+            @ViewBag.st.cin
+        </p>
+
+        <h5>
+            @Html.DisplayNameFor(model => model.email)
+        </h5>
+
+        <p>
+            @ViewBag.st.email
+        </p>
+
+        <h5>
+            @Html.DisplayNameFor(model => model.fil)
+        </h5>
+
+        <p>
+            @ViewBag.st.fil
+        </p>
+
+        <h5>
+            @Html.DisplayNameFor(model => model.first_name)
+        </h5>
+
+        <p>
+            @ViewBag.st.first_name
+        </p>
+
+        <h5>
+            @Html.DisplayNameFor(model => model.last_name)
+        </h5>
+
+        <p>
+            @ViewBag.st.last_name
+        </p>
+
+        <h5>
+            @Html.DisplayNameFor(model => model.phone)
+        </h5>
+
+        <p>
+            @ViewBag.st.phone
+        </p>
+
+</div>
+<p>
+    @Html.ActionLink("Update", "UpdateStudent", "Student", new { cin = @ViewBag.st.cin }, null) |
+    @Html.ActionLink("Back to List", "GetStudents")
+</p>
